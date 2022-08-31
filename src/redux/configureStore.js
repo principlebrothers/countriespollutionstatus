@@ -1,7 +1,6 @@
-import {configureStore, combineReducers} from '@reduxjs/toolkit';
-import countriesReducer from './countries/countries';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-
+import countriesReducer from './countries/countries';
 
 const rootReducer = combineReducers({
   countries: countriesReducer,

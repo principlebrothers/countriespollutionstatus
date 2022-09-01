@@ -49,7 +49,7 @@
 
 A Covid-19 summary API based mobile application that renders real-time data globally and Covid-19 Cases. Click [here](https://enetechcovidupdater.netlify.app/) to see the project live.
 
-[Here is the video link](https://www.loom.com/share/4c26b65b003547078f81b6cfa3fb85e7)
+[Here is the video link](https://www.loom.com/share/0d1b49cba6524d7080bbdb16c6b6adda)
 
 <>
 [![localhost-3000-i-Phone-6-7-8-Plus.png](https://i.postimg.cc/7L9RDKcM/localhost-3000-i-Phone-6-7-8-Plus.png)](https://postimg.cc/wtt2QQ97)

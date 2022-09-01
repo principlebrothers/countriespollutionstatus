@@ -1,22 +1,74 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { MdAssignmentReturn } from 'react-icons/md';
+import { useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
+import { MdOutlineArrowBackIos } from 'react-icons/md';
 
 const Statistics = () => {
   const navigate = useNavigate();
+  const { country } = useParams();
+  const details = useSelector((state) => state.countries);
+  const countryDetails = details.filter((detail) => detail.Country === country);
+  const {
+    Country, NewConfirmed, TotalConfirmed,
+    NewDeaths, TotalDeaths, NewRecovered, TotalRecovered, Date,
+  } = countryDetails[0];
+
   const handleClick = () => {
-    navigate('/');
+    navigate('/', { replace: true });
   };
 
   return (
-    <div className="statContainer">
-      <MdAssignmentReturn className="statIcon" onClick={handleClick} />
-      <h1>Statistics</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Quisquam, quidem.
-      </p>
-    </div>
+    <article className="statContainer">
+      <div className="returnContainer">
+        <MdOutlineArrowBackIos className="statIcon" onClick={handleClick} />
+      </div>
+      <h1>COVID-19 STATISTICS</h1>
+      <div className="groupedUpdate">
+        {countryDetails && (
+          <div className="update">
+            <article className="headstyle">
+              <h2 className="detailCountryName">
+                {Country}
+              </h2>
+              <p className="detailsDate">
+                Date and Time:&nbsp;
+                <span className="statValue">{Date}</span>
+              </p>
+            </article>
+            <section className="statDetails">
+              <article className="new">
+                <p className="statTitle">
+                  New Confirmed:&nbsp;
+                  <span className="statValue">{NewConfirmed}</span>
+                </p>
+                <p className="statTitle">
+                  New Recovered:&nbsp;
+                  <span className="statValue">{NewRecovered}</span>
+                </p>
+                <p className="statTitle">
+                  New Deaths:&nbsp;
+                  <span className="statValue">{NewDeaths}</span>
+                </p>
+              </article>
+              <article className="total">
+                <p className="statTitle">
+                  Total Confirmed: &nbsp;
+                  <span className="statValue">{TotalConfirmed}</span>
+                </p>
+                <p className="statTitle">
+                  Total Deaths: &nbsp;
+                  <span className="statValue">{TotalDeaths}</span>
+                </p>
+                <p className="statTitle">
+                  Total Recovered:&nbsp;
+                  <span className="statValue">{TotalRecovered}</span>
+                </p>
+              </article>
+            </section>
+          </div>
+        )}
+      </div>
+    </article>
   );
 };
 

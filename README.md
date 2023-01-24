@@ -51,10 +51,13 @@ A Covid-19 summary API based mobile application that renders real-time data glob
 
 [Here is the video link](https://www.loom.com/share/0d1b49cba6524d7080bbdb16c6b6adda)
 
-<>
-[![localhost-3000-i-Phone-6-7-8-Plus.png](https://i.postimg.cc/7L9RDKcM/localhost-3000-i-Phone-6-7-8-Plus.png)](https://postimg.cc/wtt2QQ97)
+
+ <div align="center"> 
+<img width="350" alt="Mobile preview" src="https://i.postimg.cc/7L9RDKcM/localhost-3000-i-Phone-6-7-8-Plus.png">
 
 <img width="612" alt="Covid-updater preview" src="https://i.postimg.cc/htMgYt2j/localhost-3000-Nest-Hub-Max.png">
+</div>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 **Core Functionalities:**
 
@@ -113,14 +116,6 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 
 ## Contact
@@ -142,5 +137,13 @@ Distributed under the MIT License.
 - [Behance Ballhead Application](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>)
 - [Post Images](https://postimages.org/)
 - [React Icons](https://react-icons.github.io/react-icons/search)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the [MIT](./LICENSE) License.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
